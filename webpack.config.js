@@ -5,7 +5,7 @@ const DashboardPlugin = require('webpack-dashboard/plugin');
 
 module.exports = {
   entry: {
-    app: path.join(__dirname, 'index.js')
+    app: path.join(__dirname, 'src')
   },
   output: {
     path: path.join(__dirname, 'build'),
