@@ -17,6 +17,21 @@ module.exports = {
       title: 'React App'
     })
   ],
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: [
+          {
+            loader: 'style-loader'
+          },
+          {
+            loader: 'css-loader'
+          }
+        ]
+      }
+    ]
+  },
   devServer: {
     overlay: {
       errors: true,
