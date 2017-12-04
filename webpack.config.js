@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const Webpack = require('webpack');
+const DashboardPlugin = require('webpack-dashboard/plugin');
 
 module.exports = {
   entry: {
@@ -11,8 +12,9 @@ module.exports = {
     filename: 'index.bundle.js'
   },
   plugins: [
+    new DashboardPlugin(),
     new HtmlWebpackPlugin({
-      title: 'Hot Module Reloading'
+      title: 'React App'
     })
   ]
 };
