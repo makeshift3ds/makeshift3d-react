@@ -16,5 +16,11 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'React App'
     })
-  ]
+  ],
+  devServer: {
+    overlay: {
+      errors: true,
+      warnings: true
+    }
+  }
 };
