@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --hot"
+    "start":
+      "nodemon --watch webpack.config.js --exec \"webpack-dev-server --hot\""
   },
   "keywords": [],
   "author": "",
