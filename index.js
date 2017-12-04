@@ -1,3 +1,3 @@
 import hello from './hello';
 
-document.body.appendChild(hello('Hello Bro!'));
+document.body.appendChild(hello('Hello Bros!'));
