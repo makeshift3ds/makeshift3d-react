@@ -1,7 +1,7 @@
 /* Components */
 const path = require('path'),
   HtmlWebpackPlugin = require('html-webpack-plugin'),
-  Webpack = require('webpack'),
+  webpack = require('webpack'),
   DashboardPlugin = require('webpack-dashboard/plugin');
 merge = require('webpack-merge');
 

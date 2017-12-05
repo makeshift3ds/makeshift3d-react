@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dashboard -- nodemon --watch webpack.config.js --watch webpack --exec \"webpack-dev-server --hot --env dev\"",
+    "start":
+      "webpack-dashboard -- nodemon --watch webpack.config.js --watch webpack --exec \"webpack-dev-server --env dev\"",
     "build": "webpack --env prod"
   },
   "keywords": [],
