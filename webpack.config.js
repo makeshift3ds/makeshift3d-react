@@ -7,39 +7,32 @@ merge = require('webpack-merge');
 
 /* Configurations */
 const cssConfig = require('./webpack/css.config'),
-  devServerConfig = require('./webpack/dev-server.config');
+  devServerConfig = require('./webpack/dev-server.config'),
+  extractCssConfig = require('./webpack/extract-css.config');
 
 /* Common Configuration */
-const common = merge(
-  {
-    entry: {
-      app: path.join(__dirname, 'src')
-    },
-    output: {
-      path: path.join(__dirname, 'build'),
-      filename: 'index.bundle.js'
-    },
-    plugins: [
-      new DashboardPlugin(),
-      new HtmlWebpackPlugin({
-        title: 'React App'
-      })
-    ]
+const common = merge({
+  entry: {
+    app: path.join(__dirname, 'src')
   },
-  cssConfig.load()
-);
-
-const production = merge(common, {});
-
-const development = merge(common, devServerConfig.load());
+  output: {
+    path: path.join(__dirname, 'build'),
+    filename: 'index.bundle.js'
+  },
+  plugins: [
+    new DashboardPlugin(),
+    new HtmlWebpackPlugin({
+      title: 'React App'
+    })
+  ]
+});
 
 module.exports = env => {
   if (env === 'prod') {
-    return production;
-  }
-
-  if (env === 'dev') {
-    return development;
+    return merge(common, extractCssConfig.load());
+  } else if (env === 'dev') {
+    return merge(common, cssConfig.load(), devServerConfig.load());
+  } else {
+    console.error('no env provided to webpack');
   }
 };
-// merge(common, cssConfig.load());

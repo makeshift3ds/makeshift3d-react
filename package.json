@@ -5,13 +5,15 @@
   "main": "index.js",
   "scripts": {
     "start":
-      "webpack-dashboard -- nodemon --watch webpack.config.js --watch webpack --exec \"webpack-dev-server --hot --env prod\""
+      "webpack-dashboard -- nodemon --watch webpack.config.js --watch webpack --exec \"webpack-dev-server --hot --env dev\"",
+    "build": "webpack --env prod"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "css-loader": "^0.28.7",
+    "extract-text-webpack-plugin": "^3.0.2",
     "html-webpack-plugin": "^2.30.1",
     "nodemon": "^1.12.1",
     "postcss-cssnext": "^3.0.2",
