@@ -2,14 +2,15 @@
 const path = require('path'),
   HtmlWebpackPlugin = require('html-webpack-plugin'),
   webpack = require('webpack'),
-  DashboardPlugin = require('webpack-dashboard/plugin');
-merge = require('webpack-merge');
+  DashboardPlugin = require('webpack-dashboard/plugin'),
+  merge = require('webpack-merge');
 
 /* Configurations */
 const cssConfig = require('./webpack/css.config'),
   devServerConfig = require('./webpack/dev-server.config'),
   extractCssConfig = require('./webpack/extract-css.config'),
-  imgConfig = require('./webpack/img.config');
+  imgConfig = require('./webpack/img.config'),
+  sourceMapConfig = require('./webpack/source-maps.config');
 
 /* Common Configuration */
 const common = merge(
@@ -25,7 +26,8 @@ const common = merge(
       new DashboardPlugin(),
       new HtmlWebpackPlugin({
         title: 'React App'
-      })
+      }),
+      new webpack.NamedModulesPlugin()
     ]
   },
   imgConfig.load()
@@ -33,9 +35,18 @@ const common = merge(
 
 module.exports = env => {
   if (env === 'prod') {
-    return merge(common, extractCssConfig.load());
+    return merge(
+      common,
+      extractCssConfig.load(),
+      sourceMapConfig.load({ devtool: 'source-map' })
+    );
   } else if (env === 'dev') {
-    return merge(common, cssConfig.load(), devServerConfig.load());
+    return merge(
+      common,
+      cssConfig.load(),
+      devServerConfig.load(),
+      sourceMapConfig.load({ devtool: 'source-map' })
+    );
   } else {
     console.error('no env provided to webpack');
   }
