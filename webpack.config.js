@@ -8,24 +8,28 @@ merge = require('webpack-merge');
 /* Configurations */
 const cssConfig = require('./webpack/css.config'),
   devServerConfig = require('./webpack/dev-server.config'),
-  extractCssConfig = require('./webpack/extract-css.config');
+  extractCssConfig = require('./webpack/extract-css.config'),
+  imgConfig = require('./webpack/img.config');
 
 /* Common Configuration */
-const common = merge({
-  entry: {
-    app: path.join(__dirname, 'src')
+const common = merge(
+  {
+    entry: {
+      app: path.join(__dirname, 'src')
+    },
+    output: {
+      path: path.join(__dirname, 'build'),
+      filename: 'index.bundle.js'
+    },
+    plugins: [
+      new DashboardPlugin(),
+      new HtmlWebpackPlugin({
+        title: 'React App'
+      })
+    ]
   },
-  output: {
-    path: path.join(__dirname, 'build'),
-    filename: 'index.bundle.js'
-  },
-  plugins: [
-    new DashboardPlugin(),
-    new HtmlWebpackPlugin({
-      title: 'React App'
-    })
-  ]
-});
+  imgConfig.load()
+);
 
 module.exports = env => {
   if (env === 'prod') {

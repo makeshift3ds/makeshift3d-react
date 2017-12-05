@@ -3,7 +3,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 exports.load = () => {
   const plugin = new ExtractTextPlugin({
     allChunks: true,
-    filename: '[name].css'
+    filename: 'index.bundle.css'
   });
 
   return {

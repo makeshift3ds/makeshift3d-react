@@ -4,8 +4,22 @@
 
 body {
   background-color: var(--color);
+  display: flex;
 
   & .nested {
+    flex-direction: columns;
     background-color: green;
+  }
+
+  & .img1 {
+    background: transparent url('../maserati.jpg') top left no-repeat;
+    width: 800px;
+    height: 489px;
+  }
+
+  & .img2 {
+    background: transparent url('../logo.png') top left no-repeat;
+    width: 100px;
+    height: 100px;
   }
 }
