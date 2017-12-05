@@ -9,6 +9,14 @@ exports.load = () => ({
           },
           {
             loader: 'css-loader'
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+              config: {
+                path: 'postcss.config.js'
+              }
+            }
           }
         ]
       }

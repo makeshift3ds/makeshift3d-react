@@ -1,3 +1,11 @@
+:root {
+  --color: blue;
+}
+
 body {
-  background-color: red;
+  background-color: var(--color);
+
+  & .nested {
+    background-color: green;
+  }
 }
