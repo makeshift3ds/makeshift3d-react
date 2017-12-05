@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dashboard -- nodemon --watch webpack.config.js --exec \"webpack-dev-server --hot\""
+    "start":
+      "webpack-dashboard -- nodemon --watch webpack.config.js --exec \"webpack-dev-server --hot --env prod\""
   },
   "keywords": [],
   "author": "",
@@ -16,6 +17,7 @@
     "style-loader": "^0.19.0",
     "webpack": "^3.9.1",
     "webpack-dashboard": "^1.0.2",
-    "webpack-dev-server": "^2.9.5"
+    "webpack-dev-server": "^2.9.5",
+    "webpack-merge": "^4.1.1"
   }
 }
