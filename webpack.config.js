@@ -11,7 +11,8 @@ const cssConfig = require('./webpack/css.config'),
   extractCssConfig = require('./webpack/extract-css.config'),
   imgConfig = require('./webpack/img.config'),
   sourceMapConfig = require('./webpack/source-maps.config'),
-  cleanConfig = require('./webpack/clean.config');
+  cleanConfig = require('./webpack/clean.config'),
+  uglifyConfig = require('./webpack/uglify.config');
 
 /* Paths */
 const PATHS = {
@@ -49,7 +50,8 @@ module.exports = env => {
       cleanConfig.load({
         root: process.cwd(),
         path: PATHS.build
-      })
+      }),
+      uglifyConfig.load()
     );
   } else if (env === 'dev') {
     return merge(
