@@ -10,16 +10,23 @@ const cssConfig = require('./webpack/css.config'),
   devServerConfig = require('./webpack/dev-server.config'),
   extractCssConfig = require('./webpack/extract-css.config'),
   imgConfig = require('./webpack/img.config'),
-  sourceMapConfig = require('./webpack/source-maps.config');
+  sourceMapConfig = require('./webpack/source-maps.config'),
+  cleanConfig = require('./webpack/clean.config');
+
+/* Paths */
+const PATHS = {
+  src: path.join(__dirname, 'src'),
+  build: path.join(__dirname, 'build')
+};
 
 /* Common Configuration */
 const common = merge(
   {
     entry: {
-      app: path.join(__dirname, 'src')
+      app: PATHS.src
     },
     output: {
-      path: path.join(__dirname, 'build'),
+      path: PATHS.build,
       filename: 'index.bundle.js'
     },
     plugins: [
@@ -38,14 +45,18 @@ module.exports = env => {
     return merge(
       common,
       extractCssConfig.load(),
-      sourceMapConfig.load({ devtool: 'source-map' })
+      sourceMapConfig.load({ devtool: 'source-map' }),
+      cleanConfig.load({
+        root: process.cwd(),
+        path: PATHS.build
+      })
     );
   } else if (env === 'dev') {
     return merge(
       common,
       cssConfig.load(),
       devServerConfig.load(),
-      sourceMapConfig.load({ devtool: 'source-map' })
+      sourceMapConfig.load({ devtool: 'source-map' }) // can use breakpoints with source-map
     );
   } else {
     console.error('no env provided to webpack');
