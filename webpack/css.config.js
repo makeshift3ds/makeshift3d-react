@@ -5,21 +5,21 @@ exports.load = () => ({
         test: /\.css$/,
         use: [
           {
-            loader: 'style-loader'
+            loader: 'style-loader',
           },
           {
-            loader: 'css-loader'
+            loader: 'css-loader',
           },
           {
             loader: 'postcss-loader',
             options: {
               config: {
-                path: 'postcss.config.js'
-              }
-            }
-          }
-        ]
-      }
-    ]
-  }
+                path: 'postcss.config.js',
+              },
+            },
+          },
+        ],
+      },
+    ],
+  },
 });

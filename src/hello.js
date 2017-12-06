@@ -1,7 +1,7 @@
 import img1 from '../logo.png';
 import img2 from '../maserati.jpg';
 
-export default function(txt = 'default text') {
+export default function (txt = 'default text') {
   const el = document.createElement('div');
 
   el.innerHTML = `

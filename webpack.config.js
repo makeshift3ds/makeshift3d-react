@@ -1,18 +1,19 @@
+/* eslint no-console: 0 */
 /* Components */
-const path = require('path'),
-  HtmlWebpackPlugin = require('html-webpack-plugin'),
-  webpack = require('webpack'),
-  DashboardPlugin = require('webpack-dashboard/plugin'),
-  merge = require('webpack-merge');
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const webpack = require('webpack');
+const DashboardPlugin = require('webpack-dashboard/plugin');
+const merge = require('webpack-merge');
 
 /* Configurations */
-const cssConfig = require('./webpack/css.config'),
-  devServerConfig = require('./webpack/dev-server.config'),
-  extractCssConfig = require('./webpack/extract-css.config'),
-  imgConfig = require('./webpack/img.config'),
-  sourceMapConfig = require('./webpack/source-maps.config'),
-  cleanConfig = require('./webpack/clean.config'),
-  uglifyConfig = require('./webpack/uglify.config');
+const cssConfig = require('./webpack/css.config');
+const devServerConfig = require('./webpack/dev-server.config');
+const extractCssConfig = require('./webpack/extract-css.config');
+const imgConfig = require('./webpack/img.config');
+const sourceMapConfig = require('./webpack/source-maps.config');
+const cleanConfig = require('./webpack/clean.config');
+const uglifyConfig = require('./webpack/uglify.config');
 
 /* Paths */
 const PATHS = {
@@ -60,7 +61,8 @@ module.exports = env => {
       devServerConfig.load(),
       sourceMapConfig.load({ devtool: 'source-map' }) // can use breakpoints with source-map
     );
-  } else {
-    console.error('no env provided to webpack');
   }
+  console.error('BUILD FAILED: env variable not provided to webpack config');
+  process.exit();
+  return;
 };

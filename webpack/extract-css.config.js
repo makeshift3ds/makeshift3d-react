@@ -1,9 +1,10 @@
+/* eslint import/no-extraneous-dependencies: 0 */
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 exports.load = () => {
   const plugin = new ExtractTextPlugin({
     allChunks: true,
-    filename: 'index.bundle.css'
+    filename: 'index.bundle.css',
   });
 
   return {
@@ -18,16 +19,16 @@ exports.load = () => {
                 loader: 'postcss-loader',
                 options: {
                   config: {
-                    path: 'postcss.config.js'
-                  }
-                }
-              }
+                    path: 'postcss.config.js',
+                  },
+                },
+              },
             ],
-            fallback: 'style-loader'
-          })
-        }
-      ]
+            fallback: 'style-loader',
+          }),
+        },
+      ],
     },
-    plugins: [plugin]
+    plugins: [plugin],
   };
 };

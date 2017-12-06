@@ -1,5 +1,3 @@
-exports.load = ({ devtool }) => {
-  return {
-    devtool
-  };
-};
+exports.load = ({ devtool }) => ({
+  devtool,
+});
