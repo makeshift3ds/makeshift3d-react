@@ -1,7 +1,8 @@
 module.exports = {
   extends: ['airbnb-base', 'react'],
   env: {
-    browser: true
+    browser: true,
+    jest: true
   },
   rules: {
     indent: ['error', 2],

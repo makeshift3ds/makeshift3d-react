@@ -4,9 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dashboard -- nodemon --watch webpack.config.js --watch webpack --exec \"webpack-dev-server --env dev\"",
+    "start":
+      "webpack-dashboard -- nodemon --watch webpack.config.js --watch webpack --exec \"webpack-dev-server --env dev\"",
     "build": "webpack --env prod",
-    "lint:js": "eslint . --fix"
+    "lint:js": "eslint . --fix",
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
@@ -27,6 +29,7 @@
     "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^1.1.5",
     "html-webpack-plugin": "^2.30.1",
+    "jest": "^21.2.1",
     "nodemon": "^1.12.5",
     "postcss-cssnext": "^3.0.2",
     "postcss-loader": "^2.0.9",
