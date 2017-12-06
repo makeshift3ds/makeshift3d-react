@@ -1,9 +1,5 @@
-import './main.css';
-import hello from './hello';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App.jsx';
 
-function component() {
-  const res = hello('Hello Bros!');
-  document.body.appendChild(res);
-}
-
-component();
+ReactDOM.render(<App />, document.getElementById('root'));

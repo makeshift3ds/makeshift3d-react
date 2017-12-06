@@ -14,32 +14,38 @@ const imgConfig = require('./webpack/img.config');
 const sourceMapConfig = require('./webpack/source-maps.config');
 const cleanConfig = require('./webpack/clean.config');
 const uglifyConfig = require('./webpack/uglify.config');
+const jsConfig = require('./webpack/js.config');
 
 /* Paths */
 const PATHS = {
   src: path.join(__dirname, 'src'),
-  build: path.join(__dirname, 'build')
+  build: path.join(__dirname, 'build'),
 };
 
 /* Common Configuration */
 const common = merge(
   {
     entry: {
-      app: PATHS.src
+      app: PATHS.src,
     },
     output: {
       path: PATHS.build,
-      filename: 'index.bundle.js'
+      filename: 'index.bundle.js',
     },
     plugins: [
       new DashboardPlugin(),
       new HtmlWebpackPlugin({
-        title: 'React App'
+        title: 'React App',
+        template: './src/index.html',
       }),
-      new webpack.NamedModulesPlugin()
-    ]
+      new webpack.NamedModulesPlugin(),
+    ],
+    resolve: {
+      extensions: ['.js', '.jsx'],
+    },
   },
-  imgConfig.load()
+  imgConfig.load(),
+  jsConfig.load()
 );
 
 module.exports = env => {
@@ -50,7 +56,7 @@ module.exports = env => {
       sourceMapConfig.load({ devtool: 'source-map' }),
       cleanConfig.load({
         root: process.cwd(),
-        path: PATHS.build
+        path: PATHS.build,
       }),
       uglifyConfig.load()
     );
@@ -64,5 +70,4 @@ module.exports = env => {
   }
   console.error('BUILD FAILED: env variable not provided to webpack config');
   process.exit();
-  return;
 };
