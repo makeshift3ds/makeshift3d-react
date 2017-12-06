@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dashboard -- nodemon --watch webpack.config.js --watch webpack --exec \"webpack-dev-server --env dev\"",
-    "build": "webpack --env prod"
+    "start":
+      "webpack-dashboard -- nodemon --watch webpack.config.js --watch webpack --exec \"webpack-dev-server --env dev\"",
+    "build": "webpack --env prod",
+    "lint:js": "eslint . --fix"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +15,9 @@
   "devDependencies": {
     "clean-webpack-plugin": "^0.1.17",
     "css-loader": "^0.28.7",
+    "eslint": "^4.12.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
     "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^1.1.5",
     "html-webpack-plugin": "^2.30.1",
