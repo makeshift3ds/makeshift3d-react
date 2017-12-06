@@ -10,6 +10,9 @@
     "lint:js": "eslint . --fix",
     "test": "jest"
   },
+  "jest": {
+    "setupFiles": ["./config/jest/shims.js", "./config/jest/setup.js"]
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -21,6 +24,8 @@
     "babel-preset-react": "^6.24.1",
     "clean-webpack-plugin": "^0.1.17",
     "css-loader": "^0.28.7",
+    "enzyme": "^3.2.0",
+    "enzyme-adapter-react-16": "^1.1.0",
     "eslint": "^4.12.1",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-config-react": "^1.1.7",
