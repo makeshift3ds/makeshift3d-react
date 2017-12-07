@@ -1,5 +1,12 @@
-@import './globals.css';
-
 body {
-  background-color: var(--color-bg);
+  background-color: var(--white);
+}
+
+.hero {
+  height: 300px;
+  border: 1px solid red;
+  background-image: url('./hero-background.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 -10px;
 }

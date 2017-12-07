@@ -4,14 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start":
-      "webpack-dashboard -- nodemon --watch webpack.config.js --watch config/webpack --exec \"webpack-dev-server --env dev\"",
+    "start": "webpack-dashboard -- nodemon --watch webpack.config.js --watch config/webpack --exec \"webpack-dev-server --env dev\"",
     "build": "webpack --env prod",
     "lint:js": "eslint . --fix",
     "test": "jest"
   },
   "jest": {
-    "setupFiles": ["./config/jest/shims.js", "./config/jest/setup.js"]
+    "setupFiles": [
+      "./config/jest/shims.js",
+      "./config/jest/setup.js"
+    ]
   },
   "keywords": [],
   "author": "",
@@ -40,6 +42,7 @@
     "postcss-import": "^11.0.0",
     "postcss-loader": "^2.0.9",
     "style-loader": "^0.19.0",
+    "svg-url-loader": "^2.3.0",
     "uglifyjs-webpack-plugin": "^1.1.2",
     "url-loader": "^0.6.2",
     "webpack": "^3.10.0",

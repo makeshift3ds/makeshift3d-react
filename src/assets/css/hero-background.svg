@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1138 104.01">
+  <defs>
+    <style>
+      .cls-1,
+      .cls-2,
+      .cls-3,
+      .cls-4,
+      .cls-5{
+        fill:none;
+        stroke-miterlimit:10;
+      }
+      .cls-1{
+        stroke:#000
+      }
+      .cls-2{
+        stroke:#ff0
+      }
+      .cls-2,
+      .cls-4{
+        stroke-width:5px
+      }
+      .cls-3{
+        stroke:#0f0
+      }
+      .cls-3,
+      .cls-5{
+        stroke-width:4px
+      }
+      .cls-4{
+        stroke:#00f
+      }
+      .cls-5{
+        stroke:red
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M35 82v.22" />
+  <path class="cls-2" d="M35 82.22A10 10 0 1 1 25 72h11101.5" />
+  <path class="cls-3" d="M11140.5 67H25a15 15 0 1 0 15 15.41" />
+  <path class="cls-4" d="M11126.5 62H25a20 20 0 1 0 20 20.53" />
+  <path class="cls-5" d="M30 82a5 5 0 1 1-5-5h1112.5" />
+  <path class="cls-2" d="M35 .5v81.72" />
+  <path class="cls-3" d="M40 82.41V1" />
+  <path class="cls-4" d="M45 82.53V.5" />
+  <path class="cls-5" d="M29.5.5L30 82" />
+</svg>
