@@ -4,14 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start":
-      "webpack-dashboard -- nodemon --watch webpack.config.js --watch webpack --exec \"webpack-dev-server --env dev\"",
+    "start": "webpack-dashboard -- nodemon --watch webpack.config.js --watch webpack --exec \"webpack-dev-server --env dev\"",
     "build": "webpack --env prod",
     "lint:js": "eslint . --fix",
     "test": "jest"
   },
   "jest": {
-    "setupFiles": ["./config/jest/shims.js", "./config/jest/setup.js"]
+    "setupFiles": [
+      "./config/jest/shims.js",
+      "./config/jest/setup.js"
+    ]
   },
   "keywords": [],
   "author": "",
@@ -47,6 +49,7 @@
     "webpack-merge": "^4.1.1"
   },
   "dependencies": {
+    "date-fns": "^1.29.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
   }

@@ -1,6 +1,7 @@
 import React from 'react';
+import { getYear } from 'date-fns';
 
-let time = Date.now();
+let currentYear = getYear(Date.now());
 
 const App = () => (
   <div className="app">
@@ -47,7 +48,7 @@ const App = () => (
     </article>
 
     <footer>
-      <div>Copyright {time}</div>
+      <div>Copyright &copy;{currentYear}</div>
     </footer>
   </div>
 );
