@@ -1,0 +1,5 @@
+@import './globals.css';
+
+body {
+  background-color: var(--color-bg);
+}

@@ -1,5 +1,6 @@
 import React from 'react';
 import { getYear } from 'date-fns';
+import './assets/css/main.css';
 
 let currentYear = getYear(Date.now());
 
