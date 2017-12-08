@@ -4,4 +4,9 @@
   --tan: rgba(238, 187, 148, 1);
   --orange: rgba(241, 121, 67, 1);
   --red: rgba(237, 66, 39, 1);
+  --brown: rgba(63, 25, 18, 1);
+  --green: rgba(1, 107, 19, 1);
+
+  --max-width: 1190px;
+  --min-width: 890px;
 }
