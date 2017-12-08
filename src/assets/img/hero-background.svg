@@ -1,0 +1,23 @@
+<svg data-name="Layer 1"
+     viewBox="0 0 1200 199"
+     xmlns="http://www.w3.org/2000/svg">
+  <def>
+    <style>
+      .path1 {
+        fill: rgba(76, 158, 188, 1);
+      }
+      .path2 {
+        fill: rgba(241, 121, 67, 1);
+      }
+      .path3 {
+        fill: rgba(237, 66, 39, 1);
+      }
+    </style>
+  </def>
+  <path d="M0 91h1042.5s139-11 149 109.5h-136s-3-99.5-85-99.5H0z"
+        class="path1" />
+  <path d="M0 85h1065.5s113 3 113-85h-90s2 80-76 80H0z"
+        class="path2" />
+  <path d="M0 107.5h846s135-8 134 93h-80s14-89-103-89H0z"
+        class="path3" />
+</svg>

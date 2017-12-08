@@ -1,12 +1,145 @@
-body {
-  background-color: var(--white);
+html, body {
+  height: 100%;
+}
+
+.app {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+html {
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .hero {
   height: 300px;
-  border: 1px solid red;
-  background-image: url('./hero-background.svg');
+  background-image: url('../img/hero-background.svg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 0 -10px;
+  background-position: top right;
+  background-color: var(--tan);
+
+  & .hero-container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+  }
+
+  & .avatar {
+    position: relative;
+    margin-top: 225px;
+    margin-left: 25px;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 3px solid var(--white);
+    z-index: 10;
+    background-image: url(http://res.cloudinary.com/makeshift3ds/image/upload/makeshift-header-avatar_omdbug.jpg);
+    background-size: cover;
+    background-position: center center;
+  }
+}
+
+.social {
+  background-color: var(--brown);
+  padding: 1rem;
+
+  & .social-nav {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  & .icon {
+    width: 25px;
+    height: 25px;
+
+    & path {
+      fill: #fff;
+    }
+  }
+
+  & ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    height: 30px;
+
+    & a { 
+      margin-right: 1rem;
+      padding: 4px;
+    }
+  }
+}
+
+.top {
+  background-color: var(--brown);
+
+  & .top-container {
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+    max-width: var(--max-width);
+    margin: 0 auto;
+  }
+
+  & .logo {
+    height: 40px;
+    width: 200px;
+    background: url('../img/makeshift.svg') top left no-repeat;
+  }
+
+  & .routes-nav {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    height: 30px;
+
+    & a { 
+      margin-right: 1rem;
+      padding: 4px;
+      background-color: var(--tan);
+      border-radius: 2px;
+      color: var(--brown);
+    }
+
+    & a:hover {
+      transition: background-color .5s;
+      background-color: var(--white);
+    }
+  }
+}
+
+.content {
+  flex: 1 0 auto;
+  width: var(--min-width);
+  margin: 0 auto;
+  padding: 1rem;
+
+  & .content-container {
+    display: flex;
+    
+    & article {
+      flex: 1 0 auto;
+      background-color: pink;
+      margin-right: 1rem;
+      padding: 1rem;
+    }
+
+    & aside {
+      background-color: red;
+      width: 300px;
+      padding: 1rem;
+    }
+  }
+}
+
+footer {
+  padding: 1rem;
+  background-color: var(--brown);
+  color: white;
+  text-align: center;
 }
