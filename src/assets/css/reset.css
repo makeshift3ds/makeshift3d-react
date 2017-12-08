@@ -1,0 +1,11 @@
+html {
+  box-sizing: border-box;
+}
+
+ul {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
