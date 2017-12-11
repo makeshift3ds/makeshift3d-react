@@ -9,7 +9,7 @@ html, body {
 }
 
 html {
-  font-family: Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Trebuchet MS, Tahoma, sans-serif;
 }
 
 .hero {
@@ -43,6 +43,11 @@ html {
 .social {
   background-color: var(--brown);
   padding: 1rem;
+
+  & .social-container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+  }
 
   & .social-nav {
     display: flex;
@@ -101,9 +106,10 @@ html {
     & a { 
       margin-right: 1rem;
       padding: 4px;
-      background-color: var(--tan);
+      // background-color: var(--tan);
       border-radius: 2px;
-      color: var(--brown);
+      color: var(--blue);
+      text-transform: uppercase;
     }
 
     & a:hover {
@@ -115,24 +121,35 @@ html {
 
 .content {
   flex: 1 0 auto;
-  width: var(--min-width);
-  margin: 0 auto;
-  padding: 1rem;
+  width: 100%;
 
   & .content-container {
     display: flex;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 1rem;
     
     & article {
       flex: 1 0 auto;
-      background-color: pink;
       margin-right: 1rem;
       padding: 1rem;
     }
 
     & aside {
-      background-color: red;
       width: 300px;
       padding: 1rem;
+    }
+
+    & .aside-block {
+      background-color: var(--tan);
+      border-radius: 4px;
+      box-shadow: 1px 1px 2px #000;
+      color: gray(50);
+      padding: 1rem;
+
+      & span {
+        color: gray(100);
+      }
     }
   }
 }
