@@ -7,4 +7,9 @@ describe('<TopNav />', () => {
     const wrapper = shallow(<TopNav />);
     expect(wrapper).toHaveLength(1);
   });
+
+  it('should render routes nav', () => {
+    const component = shallow(<TopNav />);
+    expect(component.find('ul.routes-nav')).toHaveLength(1);
+  });
 });
