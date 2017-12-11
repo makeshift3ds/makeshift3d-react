@@ -12,34 +12,6 @@ html {
   font-family: Trebuchet MS, Tahoma, sans-serif;
 }
 
-.hero {
-  height: 300px;
-  background-image: url('../img/hero-background.svg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top right;
-  background-color: var(--tan);
-
-  & .hero-container {
-    max-width: var(--max-width);
-    margin: 0 auto;
-  }
-
-  & .avatar {
-    position: relative;
-    margin-top: 225px;
-    margin-left: 25px;
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    border: 3px solid var(--white);
-    z-index: 10;
-    background-image: url(http://res.cloudinary.com/makeshift3ds/image/upload/makeshift-header-avatar_omdbug.jpg);
-    background-size: cover;
-    background-position: center center;
-  }
-}
-
 .social {
   background-color: var(--brown);
   padding: 1rem;
