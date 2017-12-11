@@ -5,6 +5,7 @@ import { getYear } from 'date-fns';
 import TopNav from '../TopNav/TopNav.jsx';
 import Hero from '../Hero/Hero.jsx';
 import SocialNav from '../SocialNav/SocialNav.jsx';
+import Home from '../Home/Home.jsx';
 
 /* CSS */
 import '../../assets/css/manifest.css';
@@ -18,18 +19,7 @@ const App = () => (
     <SocialNav />
 
     <section className="content">
-      <div className="content-container">
-        <article>
-          <h1>Home</h1>
-          <p>This is some stuff about me</p>
-        </article>
-        <aside>
-          <div className="aside-block">
-            <p>This guy codes!</p>
-            <span> - Random Redditor</span>
-          </div>
-        </aside>
-      </div>
+      <Home />
     </section>
 
     <footer>
