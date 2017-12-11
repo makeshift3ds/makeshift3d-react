@@ -12,4 +12,9 @@ describe('<TopNav />', () => {
     const component = shallow(<TopNav />);
     expect(component.find('ul.routes-nav')).toHaveLength(1);
   });
+
+  it('should match snapshot', () => {
+    const component = shallow(<TopNav />);
+    expect(component).toMatchSnapshot();
+  });
 });
