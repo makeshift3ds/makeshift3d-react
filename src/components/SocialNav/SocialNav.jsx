@@ -1,4 +1,5 @@
 import React from 'react';
+import './SocialNav.css';
 
 const SocialNav = () => (
   <section className="social">

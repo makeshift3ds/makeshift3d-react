@@ -1,0 +1,44 @@
+@import '../../assets/css/globals.css';
+
+.social {
+  background-color: var(--brown);
+  padding: 1rem;
+
+  & .social-container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+  }
+
+  & .social-nav {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  & .icon {
+    width: 25px;
+    height: 25px;
+
+    & path {
+      fill: #fff;
+    }
+    
+    &:hover path {
+      transition: fill 0.5s;
+      fill: var(--blue);
+    }
+  }
+
+  & ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    height: 30px;
+
+    & a { 
+      margin-right: 1rem;
+      padding: 4px;
+    }
+  }
+}
