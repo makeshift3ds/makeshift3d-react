@@ -12,4 +12,9 @@ describe('<Hero />', () => {
     const component = shallow(<Hero />);
     expect(component.find('.avatar')).toHaveLength(1);
   });
+
+  it('should match snapshot', () => {
+    const component = shallow(<Hero />);
+    expect(component).toMatchSnapshot();
+  });
 });
