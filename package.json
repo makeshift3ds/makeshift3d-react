@@ -4,16 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dashboard -- nodemon --watch webpack.config.js --watch config/webpack --exec \"webpack-dev-server --env dev\"",
+    "start":
+      "webpack-dashboard -- nodemon --watch webpack.config.js --watch config/webpack --exec \"webpack-dev-server --env dev\"",
     "build": "webpack --env prod",
     "lint:js": "eslint . --fix",
     "test": "jest"
   },
   "jest": {
-    "setupFiles": [
-      "./config/jest/shims.js",
-      "./config/jest/setup.js"
-    ]
+    "setupFiles": ["./config/jest/shims.js", "./config/jest/setup.js"],
+    "moduleNameMapper": {
+      "\\.(css|less)$": "identity-obj-proxy",
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$":
+        "./config/jest/file-mock.js"
+    }
   },
   "keywords": [],
   "author": "",
@@ -36,6 +39,7 @@
     "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^1.1.5",
     "html-webpack-plugin": "^2.30.1",
+    "identity-obj-proxy": "^3.0.0",
     "jest": "^21.2.1",
     "nodemon": "^1.12.5",
     "postcss-cssnext": "^3.0.2",

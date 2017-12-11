@@ -12,6 +12,47 @@ html {
   font-family: Trebuchet MS, Tahoma, sans-serif;
 }
 
+.top {
+  background-color: var(--brown);
+
+  & .top-container {
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+    max-width: var(--max-width);
+    margin: 0 auto;
+  }
+
+  & .logo {
+    height: 40px;
+    width: 200px;
+    background: url('../img/makeshift.svg') top left no-repeat;
+  }
+
+  & .routes-nav {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    height: 30px;
+
+    & a { 
+      margin-right: 1rem;
+      padding: 4px;
+      border-radius: 2px;
+      color: var(--white);
+      text-transform: uppercase;
+    }
+
+    & a:hover {
+      transition: background-color 0.5s, color 0.5s;
+      background-color: var(--white);
+      color: var(--blue);
+    }
+  }
+}
+
 .hero {
   height: 300px;
   background-image: url('../img/hero-background.svg');
@@ -61,6 +102,11 @@ html {
     & path {
       fill: #fff;
     }
+    
+    &:hover path {
+      transition: fill 0.5s;
+      fill: var(--blue);
+    }
   }
 
   & ul {
@@ -78,46 +124,7 @@ html {
   }
 }
 
-.top {
-  background-color: var(--brown);
 
-  & .top-container {
-    display: flex;
-    padding: 1rem;
-    justify-content: space-between;
-    max-width: var(--max-width);
-    margin: 0 auto;
-  }
-
-  & .logo {
-    height: 40px;
-    width: 200px;
-    background: url('../img/makeshift.svg') top left no-repeat;
-  }
-
-  & .routes-nav {
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-    height: 30px;
-
-    & a { 
-      margin-right: 1rem;
-      padding: 4px;
-      // background-color: var(--tan);
-      border-radius: 2px;
-      color: var(--blue);
-      text-transform: uppercase;
-    }
-
-    & a:hover {
-      transition: background-color .5s;
-      background-color: var(--white);
-    }
-  }
-}
 
 .content {
   flex: 1 0 auto;
