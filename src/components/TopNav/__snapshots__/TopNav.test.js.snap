@@ -45,12 +45,13 @@ ShallowWrapper {
             </Link>
           </li>
           <li>
-            <a
+            <Link
               aria-label="link to Ken Elliott's resume"
-              href="#3"
+              replace={false}
+              to="/resume"
             >
               Resume
-            </a>
+            </Link>
           </li>
           <li>
             <a
@@ -96,12 +97,13 @@ ShallowWrapper {
               </Link>
             </li>
             <li>
-              <a
+              <Link
                 aria-label="link to Ken Elliott's resume"
-                href="#3"
+                replace={false}
+                to="/resume"
               >
                 Resume
-              </a>
+              </Link>
             </li>
             <li>
               <a
@@ -153,12 +155,13 @@ ShallowWrapper {
                 </Link>
               </li>,
               <li>
-                <a
+                <Link
                   aria-label="link to Ken Elliott's resume"
-                  href="#3"
+                  replace={false}
+                  to="/resume"
                 >
                   Resume
-                </a>
+                </Link>
               </li>,
               <li>
                 <a
@@ -238,26 +241,28 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": <a
+                "children": <Link
                   aria-label="link to Ken Elliott's resume"
-                  href="#3"
+                  replace={false}
+                  to="/resume"
                 >
                   Resume
-                </a>,
+                </Link>,
               },
               "ref": null,
               "rendered": Object {
                 "instance": null,
                 "key": undefined,
-                "nodeType": "host",
+                "nodeType": "class",
                 "props": Object {
                   "aria-label": "link to Ken Elliott's resume",
                   "children": "Resume",
-                  "href": "#3",
+                  "replace": false,
+                  "to": "/resume",
                 },
                 "ref": null,
                 "rendered": "Resume",
-                "type": "a",
+                "type": [Function],
               },
               "type": "li",
             },
@@ -331,12 +336,13 @@ ShallowWrapper {
               </Link>
             </li>
             <li>
-              <a
+              <Link
                 aria-label="link to Ken Elliott's resume"
-                href="#3"
+                replace={false}
+                to="/resume"
               >
                 Resume
-              </a>
+              </Link>
             </li>
             <li>
               <a
@@ -382,12 +388,13 @@ ShallowWrapper {
                 </Link>
               </li>
               <li>
-                <a
+                <Link
                   aria-label="link to Ken Elliott's resume"
-                  href="#3"
+                  replace={false}
+                  to="/resume"
                 >
                   Resume
-                </a>
+                </Link>
               </li>
               <li>
                 <a
@@ -439,12 +446,13 @@ ShallowWrapper {
                   </Link>
                 </li>,
                 <li>
-                  <a
+                  <Link
                     aria-label="link to Ken Elliott's resume"
-                    href="#3"
+                    replace={false}
+                    to="/resume"
                   >
                     Resume
-                  </a>
+                  </Link>
                 </li>,
                 <li>
                   <a
@@ -524,26 +532,28 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": <a
+                  "children": <Link
                     aria-label="link to Ken Elliott's resume"
-                    href="#3"
+                    replace={false}
+                    to="/resume"
                   >
                     Resume
-                  </a>,
+                  </Link>,
                 },
                 "ref": null,
                 "rendered": Object {
                   "instance": null,
                   "key": undefined,
-                  "nodeType": "host",
+                  "nodeType": "class",
                   "props": Object {
                     "aria-label": "link to Ken Elliott's resume",
                     "children": "Resume",
-                    "href": "#3",
+                    "replace": false,
+                    "to": "/resume",
                   },
                   "ref": null,
                   "rendered": "Resume",
-                  "type": "a",
+                  "type": [Function],
                 },
                 "type": "li",
               },

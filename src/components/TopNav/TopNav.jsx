@@ -18,9 +18,9 @@ const TopNav = () => (
           </Link>
         </li>
         <li>
-          <a href="#3" aria-label="link to Ken Elliott's resume">
+          <Link to="/resume" aria-label="link to Ken Elliott's resume">
             Resume
-          </a>
+          </Link>
         </li>
         <li>
           <a href="#4" aria-label="link to the contact form">

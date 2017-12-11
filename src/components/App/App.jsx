@@ -7,6 +7,7 @@ import Hero from '../Hero/Hero.jsx';
 import SocialNav from '../SocialNav/SocialNav.jsx';
 import Home from '../Home/Home.jsx';
 import Blog from '../Blog/Blog.jsx';
+import Resume from '../Resume/Resume.jsx';
 import Footer from '../Footer/Footer.jsx';
 
 /* CSS */
@@ -23,6 +24,7 @@ const App = () => (
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/blog" component={Blog} />
+          <Route path="/resume" component={Resume} />
         </Switch>
       </section>
 
