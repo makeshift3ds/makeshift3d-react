@@ -8,7 +8,7 @@ describe('<SocialNav />', () => {
     expect(wrapper).toHaveLength(1);
   });
 
-  it('should render an avatar element', () => {
+  it('should render a social-nav element', () => {
     const component = shallow(<SocialNav />);
     expect(component.find('.social-nav')).toHaveLength(1);
   });
