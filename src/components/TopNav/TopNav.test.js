@@ -4,8 +4,8 @@ import TopNav from './TopNav.jsx';
 
 describe('<TopNav />', () => {
   it('should render 1 <TopNav /> component', () => {
-    const wrapper = shallow(<TopNav />);
-    expect(wrapper).toHaveLength(1);
+    const component = shallow(<TopNav />);
+    expect(component).toHaveLength(1);
   });
 
   it('should render routes nav', () => {

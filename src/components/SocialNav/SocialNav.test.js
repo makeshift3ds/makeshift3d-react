@@ -4,8 +4,8 @@ import SocialNav from './SocialNav.jsx';
 
 describe('<SocialNav />', () => {
   it('should render 1 <SocialNav /> component', () => {
-    const wrapper = shallow(<SocialNav />);
-    expect(wrapper).toHaveLength(1);
+    const component = shallow(<SocialNav />);
+    expect(component).toHaveLength(1);
   });
 
   it('should render a social-nav element', () => {

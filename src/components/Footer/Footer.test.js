@@ -4,8 +4,8 @@ import Footer from './Footer.jsx';
 
 describe('<Footer />', () => {
   it('should render 1 <Footer /> component', () => {
-    const wrapper = shallow(<Footer />);
-    expect(wrapper).toHaveLength(1);
+    const component = shallow(<Footer />);
+    expect(component).toHaveLength(1);
   });
 
   it('should render an copyright element', () => {

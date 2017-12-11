@@ -4,8 +4,8 @@ import Home from './Home.jsx';
 
 describe('<Home />', () => {
   it('should render 1 <Home /> component', () => {
-    const wrapper = shallow(<Home />);
-    expect(wrapper).toHaveLength(1);
+    const component = shallow(<Home />);
+    expect(component).toHaveLength(1);
   });
 
   it('should render an article element', () => {
