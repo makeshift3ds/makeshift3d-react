@@ -1,4 +1,5 @@
 import React from 'react';
+import './TopNav.css';
 
 const TopNav = () => (
   <section className="top">

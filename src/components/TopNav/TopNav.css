@@ -1,0 +1,42 @@
+@import '../../assets/css/globals.css';
+
+.top {
+  background-color: var(--brown);
+
+  & .top-container {
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+    max-width: var(--max-width);
+    margin: 0 auto;
+  }
+
+  & .logo {
+    height: 40px;
+    width: 200px;
+    background: url('../../assets/img/makeshift.svg') top left no-repeat;
+  }
+
+  & .routes-nav {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    height: 30px;
+
+    & a { 
+      margin-right: 1rem;
+      padding: 4px;
+      border-radius: 2px;
+      color: var(--white);
+      text-transform: uppercase;
+    }
+
+    & a:hover {
+      transition: background-color 0.5s, color 0.5s;
+      background-color: var(--white);
+      color: var(--blue);
+    }
+  }
+}
