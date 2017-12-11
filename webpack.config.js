@@ -19,30 +19,30 @@ const jsConfig = require('./config/webpack/js.config');
 /* Paths */
 const PATHS = {
   src: path.join(__dirname, 'src'),
-  build: path.join(__dirname, 'build'),
+  build: path.join(__dirname, 'build')
 };
 
 /* Common Configuration */
 const common = merge(
   {
     entry: {
-      app: PATHS.src,
+      app: PATHS.src
     },
     output: {
       path: PATHS.build,
-      filename: 'index.bundle.js',
+      filename: 'index.bundle.js'
     },
     plugins: [
       new DashboardPlugin(),
       new HtmlWebpackPlugin({
         title: 'React App',
-        template: './src/index.html',
+        template: './src/index.html'
       }),
-      new webpack.NamedModulesPlugin(),
+      new webpack.NamedModulesPlugin()
     ],
     resolve: {
-      extensions: ['.js', '.jsx'],
-    },
+      extensions: ['.js', '.jsx']
+    }
   },
   imgConfig.load(),
   jsConfig.load()
@@ -56,7 +56,7 @@ module.exports = env => {
       sourceMapConfig.load({ devtool: 'source-map' }),
       cleanConfig.load({
         root: process.cwd(),
-        path: PATHS.build,
+        path: PATHS.build
       }),
       uglifyConfig.load()
     );
