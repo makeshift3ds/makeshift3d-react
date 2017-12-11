@@ -6,7 +6,9 @@ module.exports = {
   },
   rules: {
     indent: ['error', 2],
-    'comma-dangle': ['error', 'always-multiline']
+    'comma-dangle': [0],
+    'class-methods-use-this': [0],
+    'import/no-extraneous-dependencies': [0]
   },
   settings: {
     'import/extensions': ['js', 'jsx']
