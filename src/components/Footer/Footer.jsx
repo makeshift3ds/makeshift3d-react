@@ -1,5 +1,6 @@
 import React from 'react';
 import { getYear } from 'date-fns';
+import './Footer.css';
 
 let currentYear = getYear(Date.now());
 

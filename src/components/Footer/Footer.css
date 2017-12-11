@@ -1,0 +1,8 @@
+@import '../../assets/css/globals.css';
+
+footer {
+  padding: 1rem;
+  background-color: var(--brown);
+  color: white;
+  text-align: center;
+}
