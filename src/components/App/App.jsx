@@ -3,6 +3,7 @@ import { getYear } from 'date-fns';
 
 /* Components */
 import TopNav from '../TopNav/TopNav.jsx';
+import Hero from '../Hero/Hero.jsx';
 
 /* CSS */
 import '../../assets/css/manifest.css';
@@ -13,11 +14,7 @@ const App = () => (
   <div className="app">
     <TopNav />
 
-    <section className="hero">
-      <div className="hero-container">
-        <div className="avatar" />
-      </div>
-    </section>
+    <Hero />
 
     <section className="social">
       <div className="social-container">
