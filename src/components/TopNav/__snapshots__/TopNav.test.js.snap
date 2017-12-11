@@ -54,12 +54,13 @@ ShallowWrapper {
             </Link>
           </li>
           <li>
-            <a
+            <Link
               aria-label="link to the contact form"
-              href="#4"
+              replace={false}
+              to="/contact"
             >
               Contact
-            </a>
+            </Link>
           </li>
         </ul>
       </div>,
@@ -106,12 +107,13 @@ ShallowWrapper {
               </Link>
             </li>
             <li>
-              <a
+              <Link
                 aria-label="link to the contact form"
-                href="#4"
+                replace={false}
+                to="/contact"
               >
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>,
         ],
@@ -164,12 +166,13 @@ ShallowWrapper {
                 </Link>
               </li>,
               <li>
-                <a
+                <Link
                   aria-label="link to the contact form"
-                  href="#4"
+                  replace={false}
+                  to="/contact"
                 >
                   Contact
-                </a>
+                </Link>
               </li>,
             ],
             "className": "routes-nav",
@@ -271,26 +274,28 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": <a
+                "children": <Link
                   aria-label="link to the contact form"
-                  href="#4"
+                  replace={false}
+                  to="/contact"
                 >
                   Contact
-                </a>,
+                </Link>,
               },
               "ref": null,
               "rendered": Object {
                 "instance": null,
                 "key": undefined,
-                "nodeType": "host",
+                "nodeType": "class",
                 "props": Object {
                   "aria-label": "link to the contact form",
                   "children": "Contact",
-                  "href": "#4",
+                  "replace": false,
+                  "to": "/contact",
                 },
                 "ref": null,
                 "rendered": "Contact",
-                "type": "a",
+                "type": [Function],
               },
               "type": "li",
             },
@@ -345,12 +350,13 @@ ShallowWrapper {
               </Link>
             </li>
             <li>
-              <a
+              <Link
                 aria-label="link to the contact form"
-                href="#4"
+                replace={false}
+                to="/contact"
               >
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </div>,
@@ -397,12 +403,13 @@ ShallowWrapper {
                 </Link>
               </li>
               <li>
-                <a
+                <Link
                   aria-label="link to the contact form"
-                  href="#4"
+                  replace={false}
+                  to="/contact"
                 >
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>,
           ],
@@ -455,12 +462,13 @@ ShallowWrapper {
                   </Link>
                 </li>,
                 <li>
-                  <a
+                  <Link
                     aria-label="link to the contact form"
-                    href="#4"
+                    replace={false}
+                    to="/contact"
                   >
                     Contact
-                  </a>
+                  </Link>
                 </li>,
               ],
               "className": "routes-nav",
@@ -562,26 +570,28 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": <a
+                  "children": <Link
                     aria-label="link to the contact form"
-                    href="#4"
+                    replace={false}
+                    to="/contact"
                   >
                     Contact
-                  </a>,
+                  </Link>,
                 },
                 "ref": null,
                 "rendered": Object {
                   "instance": null,
                   "key": undefined,
-                  "nodeType": "host",
+                  "nodeType": "class",
                   "props": Object {
                     "aria-label": "link to the contact form",
                     "children": "Contact",
-                    "href": "#4",
+                    "replace": false,
+                    "to": "/contact",
                   },
                   "ref": null,
                   "rendered": "Contact",
-                  "type": "a",
+                  "type": [Function],
                 },
                 "type": "li",
               },

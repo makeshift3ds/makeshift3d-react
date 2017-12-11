@@ -7,6 +7,7 @@ import Hero from '../Hero/Hero.jsx';
 import SocialNav from '../SocialNav/SocialNav.jsx';
 import Home from '../Home/Home.jsx';
 import Blog from '../Blog/Blog.jsx';
+import Contact from '../Contact/Contact.jsx';
 import Resume from '../Resume/Resume.jsx';
 import Footer from '../Footer/Footer.jsx';
 
@@ -25,6 +26,7 @@ const App = () => (
           <Route exact path="/" component={Home} />
           <Route path="/blog" component={Blog} />
           <Route path="/resume" component={Resume} />
+          <Route path="/contact" component={Contact} />
         </Switch>
       </section>
 

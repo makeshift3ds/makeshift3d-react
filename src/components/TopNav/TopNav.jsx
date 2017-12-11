@@ -23,9 +23,9 @@ const TopNav = () => (
           </Link>
         </li>
         <li>
-          <a href="#4" aria-label="link to the contact form">
+          <Link to="/contact" aria-label="link to the contact form">
             Contact
-          </a>
+          </Link>
         </li>
       </ul>
     </div>
