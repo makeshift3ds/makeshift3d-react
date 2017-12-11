@@ -27,12 +27,13 @@ ShallowWrapper {
           className="routes-nav"
         >
           <li>
-            <a
+            <Link
               aria-label="link to the homepage"
-              href="#1"
+              replace={false}
+              to="/"
             >
               Home
-            </a>
+            </Link>
           </li>
           <li>
             <a
@@ -44,7 +45,7 @@ ShallowWrapper {
           </li>
           <li>
             <a
-              aria-label="link to Ken Elliotts resume"
+              aria-label="link to Ken Elliott's resume"
               href="#3"
             >
               Resume
@@ -76,12 +77,13 @@ ShallowWrapper {
             className="routes-nav"
           >
             <li>
-              <a
+              <Link
                 aria-label="link to the homepage"
-                href="#1"
+                replace={false}
+                to="/"
               >
                 Home
-              </a>
+              </Link>
             </li>
             <li>
               <a
@@ -93,7 +95,7 @@ ShallowWrapper {
             </li>
             <li>
               <a
-                aria-label="link to Ken Elliotts resume"
+                aria-label="link to Ken Elliott's resume"
                 href="#3"
               >
                 Resume
@@ -131,12 +133,13 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <li>
-                <a
+                <Link
                   aria-label="link to the homepage"
-                  href="#1"
+                  replace={false}
+                  to="/"
                 >
                   Home
-                </a>
+                </Link>
               </li>,
               <li>
                 <a
@@ -148,7 +151,7 @@ ShallowWrapper {
               </li>,
               <li>
                 <a
-                  aria-label="link to Ken Elliotts resume"
+                  aria-label="link to Ken Elliott's resume"
                   href="#3"
                 >
                   Resume
@@ -172,26 +175,28 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": <a
+                "children": <Link
                   aria-label="link to the homepage"
-                  href="#1"
+                  replace={false}
+                  to="/"
                 >
                   Home
-                </a>,
+                </Link>,
               },
               "ref": null,
               "rendered": Object {
                 "instance": null,
                 "key": undefined,
-                "nodeType": "host",
+                "nodeType": "class",
                 "props": Object {
                   "aria-label": "link to the homepage",
                   "children": "Home",
-                  "href": "#1",
+                  "replace": false,
+                  "to": "/",
                 },
                 "ref": null,
                 "rendered": "Home",
-                "type": "a",
+                "type": [Function],
               },
               "type": "li",
             },
@@ -229,7 +234,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": <a
-                  aria-label="link to Ken Elliotts resume"
+                  aria-label="link to Ken Elliott's resume"
                   href="#3"
                 >
                   Resume
@@ -241,7 +246,7 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "aria-label": "link to Ken Elliotts resume",
+                  "aria-label": "link to Ken Elliott's resume",
                   "children": "Resume",
                   "href": "#3",
                 },
@@ -303,12 +308,13 @@ ShallowWrapper {
             className="routes-nav"
           >
             <li>
-              <a
+              <Link
                 aria-label="link to the homepage"
-                href="#1"
+                replace={false}
+                to="/"
               >
                 Home
-              </a>
+              </Link>
             </li>
             <li>
               <a
@@ -320,7 +326,7 @@ ShallowWrapper {
             </li>
             <li>
               <a
-                aria-label="link to Ken Elliotts resume"
+                aria-label="link to Ken Elliott's resume"
                 href="#3"
               >
                 Resume
@@ -352,12 +358,13 @@ ShallowWrapper {
               className="routes-nav"
             >
               <li>
-                <a
+                <Link
                   aria-label="link to the homepage"
-                  href="#1"
+                  replace={false}
+                  to="/"
                 >
                   Home
-                </a>
+                </Link>
               </li>
               <li>
                 <a
@@ -369,7 +376,7 @@ ShallowWrapper {
               </li>
               <li>
                 <a
-                  aria-label="link to Ken Elliotts resume"
+                  aria-label="link to Ken Elliott's resume"
                   href="#3"
                 >
                   Resume
@@ -407,12 +414,13 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 <li>
-                  <a
+                  <Link
                     aria-label="link to the homepage"
-                    href="#1"
+                    replace={false}
+                    to="/"
                   >
                     Home
-                  </a>
+                  </Link>
                 </li>,
                 <li>
                   <a
@@ -424,7 +432,7 @@ ShallowWrapper {
                 </li>,
                 <li>
                   <a
-                    aria-label="link to Ken Elliotts resume"
+                    aria-label="link to Ken Elliott's resume"
                     href="#3"
                   >
                     Resume
@@ -448,26 +456,28 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": <a
+                  "children": <Link
                     aria-label="link to the homepage"
-                    href="#1"
+                    replace={false}
+                    to="/"
                   >
                     Home
-                  </a>,
+                  </Link>,
                 },
                 "ref": null,
                 "rendered": Object {
                   "instance": null,
                   "key": undefined,
-                  "nodeType": "host",
+                  "nodeType": "class",
                   "props": Object {
                     "aria-label": "link to the homepage",
                     "children": "Home",
-                    "href": "#1",
+                    "replace": false,
+                    "to": "/",
                   },
                   "ref": null,
                   "rendered": "Home",
-                  "type": "a",
+                  "type": [Function],
                 },
                 "type": "li",
               },
@@ -505,7 +515,7 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": <a
-                    aria-label="link to Ken Elliotts resume"
+                    aria-label="link to Ken Elliott's resume"
                     href="#3"
                   >
                     Resume
@@ -517,7 +527,7 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "aria-label": "link to Ken Elliotts resume",
+                    "aria-label": "link to Ken Elliott's resume",
                     "children": "Resume",
                     "href": "#3",
                   },

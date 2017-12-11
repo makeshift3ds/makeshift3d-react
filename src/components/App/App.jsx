@@ -1,4 +1,6 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
+
 /* Components */
 import TopNav from '../TopNav/TopNav.jsx';
 import Hero from '../Hero/Hero.jsx';
@@ -10,17 +12,21 @@ import Footer from '../Footer/Footer.jsx';
 import '../../assets/css/manifest.css';
 
 const App = () => (
-  <div className="app">
-    <TopNav />
-    <Hero />
-    <SocialNav />
+  <Router>
+    <div className="app">
+      <TopNav />
+      <Hero />
+      <SocialNav />
 
-    <section className="content">
-      <Home />
-    </section>
+      <section className="content">
+        <Switch>
+          <Route exact path="/" component={Home} />
+        </Switch>
+      </section>
 
-    <Footer />
-  </div>
+      <Footer />
+    </div>
+  </Router>
 );
 
 export default App;

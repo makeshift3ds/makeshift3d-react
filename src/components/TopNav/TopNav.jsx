@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './TopNav.css';
 
 const TopNav = () => (
@@ -7,9 +8,9 @@ const TopNav = () => (
       <div className="logo" />
       <ul className="routes-nav">
         <li>
-          <a href="#1" aria-label="link to the homepage">
+          <Link to="/" aria-label="link to the homepage">
             Home
-          </a>
+          </Link>
         </li>
         <li>
           <a href="#2" aria-label="link to the blog section">
@@ -17,7 +18,7 @@ const TopNav = () => (
           </a>
         </li>
         <li>
-          <a href="#3" aria-label="link to Ken Elliotts resume">
+          <a href="#3" aria-label="link to Ken Elliott's resume">
             Resume
           </a>
         </li>
