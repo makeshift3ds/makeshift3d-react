@@ -17,7 +17,8 @@
       "\\.(css|less)$": "identity-obj-proxy",
       "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$":
         "./config/jest/file-mock.js"
-    }
+    },
+    "testPathIgnorePatterns": ["<rootDir>/build/", "<rootDir>/node_modules/"]
   },
   "keywords": [],
   "author": "",
