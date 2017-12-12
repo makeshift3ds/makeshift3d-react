@@ -22,7 +22,7 @@
     border-radius: 50%;
     border: 3px solid var(--white);
     z-index: 10;
-    background-image: url(http://res.cloudinary.com/makeshift3ds/image/upload/makeshift-header-avatar_omdbug.jpg);
+    background-image: url(//res.cloudinary.com/makeshift3ds/image/upload/makeshift-header-avatar_omdbug.jpg);
     background-size: cover;
     background-position: center center;
   }
