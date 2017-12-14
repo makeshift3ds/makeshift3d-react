@@ -2,11 +2,14 @@
   --blue: rgba(76, 158, 188, 1);
   --white: rgba(230, 233, 228, 1);
   --tan: rgba(238, 187, 148, 1);
+  --tan-half: rgba(238, 187, 148, .5);
   --orange: rgba(241, 121, 67, 1);
   --red: rgba(237, 66, 39, 1);
   --brown: rgba(63, 25, 18, 1);
   --green: rgba(1, 107, 19, 1);
+  --green-half: rgba(1, 107, 19, .5);
 
   --max-width: 1190px;
   --min-width: 890px;
+  --small-breakpoint: 550px;
 }

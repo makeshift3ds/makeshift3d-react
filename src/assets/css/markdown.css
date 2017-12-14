@@ -1,0 +1,28 @@
+.content-container article > .interweave {
+  margin-top: 2rem;
+  display: block;
+  line-height: 1.6rem;
+
+  & > p {
+    margin-bottom: 1rem;
+  }
+
+  & blockquote {
+    border-left: 6px solid var(--blue);
+    margin: 0 0 1rem 0;
+    background-color: var(--tan-half);
+    color: var(--green);
+
+    & p {
+      padding: .5rem .5rem .5rem 1rem;
+    }
+  }
+
+  & a {
+    color: var(--blue);
+
+    &:hover {
+      color: var(--green);
+    }
+  }
+}

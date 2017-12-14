@@ -1,7 +1,6 @@
 import React from 'react';
 import { Markup } from 'interweave';
 import 'babel-polyfill';
-
 import './Home.css';
 
 export default class Home extends React.Component {
@@ -28,12 +27,16 @@ export default class Home extends React.Component {
       <div className="content-container">
         <article>
           <h1>{title}</h1>
-          <Markup content={body} />
+          <Markup content={body} tag="div" />
         </article>
         <aside>
           <div className="aside-block">
             <p>This guy codes!</p>
             <span> - Random Redditor</span>
+          </div>
+          <div className="aside-block">
+            <p>I use PERL to write code that no one understands.</p>
+            <span> - Ken Elliott</span>
           </div>
         </aside>
       </div>

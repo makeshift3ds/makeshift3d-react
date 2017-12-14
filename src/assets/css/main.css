@@ -25,7 +25,6 @@ html {
 }
 
 article {
-  flex: 1 0 auto;
   margin-right: 1rem;
   padding: 1rem;
 }
@@ -35,11 +34,12 @@ aside {
   padding: 1rem;
   
   & .aside-block {
-    background-color: var(--tan);
+    background-color: var(--tan-half);
     border-radius: 4px;
     box-shadow: 1px 1px 2px #000;
     color: gray(50);
     padding: 1rem;
+    margin-bottom: 1rem;
 
     & span {
       color: gray(100);
