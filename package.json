@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start":
-      "webpack-dashboard -- nodemon --watch webpack.config.js --watch config/webpack --exec \"webpack-dev-server --env dev\"",
+    "start": "webpack-dashboard -- nodemon --watch webpack.config.js --watch config/webpack --exec \"webpack-dev-server --env dev\"",
     "build": "webpack --env prod",
     "lint:js": "eslint . --fix",
     "test": "jest",
@@ -14,13 +13,18 @@
     "deploy": "./deploy.sh"
   },
   "jest": {
-    "setupFiles": ["./config/jest/shims.js", "./config/jest/setup.js"],
+    "setupFiles": [
+      "./config/jest/shims.js",
+      "./config/jest/setup.js"
+    ],
     "moduleNameMapper": {
       "\\.(css|less)$": "identity-obj-proxy",
-      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$":
-        "./config/jest/file-mock.js"
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "./config/jest/file-mock.js"
     },
-    "testPathIgnorePatterns": ["<rootDir>/build/", "<rootDir>/node_modules/"]
+    "testPathIgnorePatterns": [
+      "<rootDir>/build/",
+      "<rootDir>/node_modules/"
+    ]
   },
   "keywords": [],
   "author": "",
@@ -62,6 +66,7 @@
   },
   "dependencies": {
     "date-fns": "^1.29.0",
+    "interweave": "^8.0.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-router-dom": "^4.2.2"

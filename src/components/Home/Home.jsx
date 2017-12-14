@@ -1,8 +1,8 @@
 import React from 'react';
-import './Home.css';
+import { Markup } from 'interweave';
+import 'babel-polyfill';
 
-/* polyfill for async await */
-import BabelPolyfill from 'babel-polyfill';
+import './Home.css';
 
 export default class Home extends React.Component {
   async componentDidMount() {
@@ -28,7 +28,7 @@ export default class Home extends React.Component {
       <div className="content-container">
         <article>
           <h1>{title}</h1>
-          <p dangerouslySetInnerHTML={{ __html: body }} />
+          <Markup content={body} />
         </article>
         <aside>
           <div className="aside-block">
