@@ -30,6 +30,10 @@ article {
 }
 
 aside {
+  @media (--small) {
+    display: none;
+  }
+
   width: 300px;
   padding: 1rem;
   

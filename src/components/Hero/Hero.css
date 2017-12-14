@@ -25,5 +25,11 @@
     background-image: url(//res.cloudinary.com/makeshift3ds/image/upload/makeshift-header-avatar_omdbug.jpg);
     background-size: cover;
     background-position: center center;
+
+    @media (--small) {
+      position: static;
+      margin: 0 auto;
+      margin-top: calc((300px/2) - (150px/2));
+    }
   }
 }

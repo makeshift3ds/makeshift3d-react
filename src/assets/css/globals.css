@@ -11,5 +11,7 @@
 
   --max-width: 1190px;
   --min-width: 890px;
-  --small-breakpoint: 550px;
 }
+
+@custom-media --small (max-width: 549px);
+

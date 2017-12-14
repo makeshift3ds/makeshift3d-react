@@ -9,12 +9,20 @@
     justify-content: space-between;
     max-width: var(--max-width);
     margin: 0 auto;
+
+    @media (--small) {
+      display: block;
+    }
   }
 
   & .logo {
     height: 40px;
     width: 200px;
     background: url('../../assets/img/makeshift.svg') top left no-repeat;
+
+    @media (--small) {
+      margin: 0 auto;
+    }
   }
 
   & .routes-nav {
@@ -24,6 +32,14 @@
     padding: 0;
     margin: 0;
     height: 30px;
+
+    @media (--small) {
+      justify-content: center;
+      
+      & li:last-of-type a {
+        margin-right: 0;
+      }
+    }
 
     & a { 
       margin-right: 1rem;

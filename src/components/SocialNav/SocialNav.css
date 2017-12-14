@@ -12,6 +12,10 @@
   & .social-nav {
     display: flex;
     justify-content: flex-end;
+
+    @media (--small) {
+      justify-content: center;
+    }
   }
 
   & .icon {
@@ -39,6 +43,12 @@
     & a { 
       margin-right: 1rem;
       padding: 4px;
+    }
+
+    @media (--small) {
+      & li:last-of-type a {
+        margin-right: 0;
+      }
     }
   }
 }
