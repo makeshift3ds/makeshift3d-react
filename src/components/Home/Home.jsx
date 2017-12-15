@@ -6,7 +6,7 @@ import './Home.css';
 export default class Home extends React.Component {
   async componentDidMount() {
     try {
-      const res = await fetch('http://localhost:3000/pages/foobar');
+      const res = await fetch('http://localhost:3000/pages/home');
       const page = await res.json();
       this.setState({
         page,
