@@ -4,7 +4,7 @@ exports[`<Resume /> should match snapshot 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Resume />,
+  Symbol(enzyme.__unrendered__): <Home />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -19,22 +19,27 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <article>
-          <h1>
-            Resume
-          </h1>
-          <p>
-            This is about my professional career
-          </p>
+          <h1 />
+          <Markup
+            content=""
+            disableLineBreaks={false}
+            disableWhitelist={false}
+            emptyContent={null}
+            noHtml={false}
+            noHtmlExceptMatchers={false}
+            tag="div"
+            tagName="span"
+          />
         </article>,
         <aside>
           <div
             className="aside-block"
           >
             <p>
-              This guy codes!
+              I know all the twitters.
             </p>
             <span>
-               - Random Redditor
+               - Ken Elliott
             </span>
           </div>
         </aside>,
@@ -49,12 +54,17 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <h1>
-              Resume
-            </h1>,
-            <p>
-              This is about my professional career
-            </p>,
+            <h1 />,
+            <Markup
+              content=""
+              disableLineBreaks={false}
+              disableWhitelist={false}
+              emptyContent={null}
+              noHtml={false}
+              noHtmlExceptMatchers={false}
+              tag="div"
+              tagName="span"
+            />,
           ],
         },
         "ref": null,
@@ -64,22 +74,29 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "Resume",
+              "children": undefined,
             },
             "ref": null,
-            "rendered": "Resume",
+            "rendered": null,
             "type": "h1",
           },
           Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "host",
+            "nodeType": "class",
             "props": Object {
-              "children": "This is about my professional career",
+              "content": "",
+              "disableLineBreaks": false,
+              "disableWhitelist": false,
+              "emptyContent": null,
+              "noHtml": false,
+              "noHtmlExceptMatchers": false,
+              "tag": "div",
+              "tagName": "span",
             },
             "ref": null,
-            "rendered": "This is about my professional career",
-            "type": "p",
+            "rendered": null,
+            "type": [Function],
           },
         ],
         "type": "article",
@@ -93,10 +110,10 @@ ShallowWrapper {
             className="aside-block"
           >
             <p>
-              This guy codes!
+              I know all the twitters.
             </p>
             <span>
-               - Random Redditor
+               - Ken Elliott
             </span>
           </div>,
         },
@@ -108,10 +125,10 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <p>
-                This guy codes!
+                I know all the twitters.
               </p>,
               <span>
-                 - Random Redditor
+                 - Ken Elliott
               </span>,
             ],
             "className": "aside-block",
@@ -123,10 +140,10 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "This guy codes!",
+                "children": "I know all the twitters.",
               },
               "ref": null,
-              "rendered": "This guy codes!",
+              "rendered": "I know all the twitters.",
               "type": "p",
             },
             Object {
@@ -134,10 +151,10 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": " - Random Redditor",
+                "children": " - Ken Elliott",
               },
               "ref": null,
-              "rendered": " - Random Redditor",
+              "rendered": " - Ken Elliott",
               "type": "span",
             },
           ],
@@ -156,22 +173,27 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <article>
-            <h1>
-              Resume
-            </h1>
-            <p>
-              This is about my professional career
-            </p>
+            <h1 />
+            <Markup
+              content=""
+              disableLineBreaks={false}
+              disableWhitelist={false}
+              emptyContent={null}
+              noHtml={false}
+              noHtmlExceptMatchers={false}
+              tag="div"
+              tagName="span"
+            />
           </article>,
           <aside>
             <div
               className="aside-block"
             >
               <p>
-                This guy codes!
+                I know all the twitters.
               </p>
               <span>
-                 - Random Redditor
+                 - Ken Elliott
               </span>
             </div>
           </aside>,
@@ -186,12 +208,17 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              <h1>
-                Resume
-              </h1>,
-              <p>
-                This is about my professional career
-              </p>,
+              <h1 />,
+              <Markup
+                content=""
+                disableLineBreaks={false}
+                disableWhitelist={false}
+                emptyContent={null}
+                noHtml={false}
+                noHtmlExceptMatchers={false}
+                tag="div"
+                tagName="span"
+              />,
             ],
           },
           "ref": null,
@@ -201,22 +228,29 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "Resume",
+                "children": undefined,
               },
               "ref": null,
-              "rendered": "Resume",
+              "rendered": null,
               "type": "h1",
             },
             Object {
               "instance": null,
               "key": undefined,
-              "nodeType": "host",
+              "nodeType": "class",
               "props": Object {
-                "children": "This is about my professional career",
+                "content": "",
+                "disableLineBreaks": false,
+                "disableWhitelist": false,
+                "emptyContent": null,
+                "noHtml": false,
+                "noHtmlExceptMatchers": false,
+                "tag": "div",
+                "tagName": "span",
               },
               "ref": null,
-              "rendered": "This is about my professional career",
-              "type": "p",
+              "rendered": null,
+              "type": [Function],
             },
           ],
           "type": "article",
@@ -230,10 +264,10 @@ ShallowWrapper {
               className="aside-block"
             >
               <p>
-                This guy codes!
+                I know all the twitters.
               </p>
               <span>
-                 - Random Redditor
+                 - Ken Elliott
               </span>
             </div>,
           },
@@ -245,10 +279,10 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 <p>
-                  This guy codes!
+                  I know all the twitters.
                 </p>,
                 <span>
-                   - Random Redditor
+                   - Ken Elliott
                 </span>,
               ],
               "className": "aside-block",
@@ -260,10 +294,10 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "This guy codes!",
+                  "children": "I know all the twitters.",
                 },
                 "ref": null,
-                "rendered": "This guy codes!",
+                "rendered": "I know all the twitters.",
                 "type": "p",
               },
               Object {
@@ -271,10 +305,10 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": " - Random Redditor",
+                  "children": " - Ken Elliott",
                 },
                 "ref": null,
-                "rendered": " - Random Redditor",
+                "rendered": " - Ken Elliott",
                 "type": "span",
               },
             ],

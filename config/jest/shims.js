@@ -20,3 +20,14 @@ global.fetch = jest.fn().mockImplementation(() => {
 
   return p;
 });
+
+let mockStorage = {};
+global.localStorage = {
+  setItem: (key, val) => {
+    mockStorage[key] = val;
+  },
+  getItem: (key) => mockStorage[key],
+  clear: () => {
+    mockStorage = {};
+  }
+};
