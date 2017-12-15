@@ -21,6 +21,9 @@ global.fetch = jest.fn().mockImplementation(() => {
   return p;
 });
 
+/**
+ * redumentary mocking for localStorage
+ */
 let mockStorage = {};
 global.localStorage = {
   setItem: (key, val) => {
