@@ -2,23 +2,10 @@ import React from 'react';
 import { Markup } from 'interweave';
 import 'babel-polyfill';
 import './Contact.css';
+import Base from '../Base.jsx';
 
-export default class Home extends React.Component {
-  async componentDidMount() {
-    try {
-      const res = await fetch('http://localhost:3000/pages/contact');
-      const page = await res.json();
-      this.setState({
-        page,
-      });
-    } catch (e) {
-      console.log('error', e);
-    }
-  }
-
-  state = {
-    page: {},
-  };
+export default class Home extends Base {
+  slug = "contact";
 
   render() {
     const { title, body } = this.state.page;
