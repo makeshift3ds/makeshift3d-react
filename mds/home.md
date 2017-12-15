@@ -1,4 +1,4 @@
-Hello and welcome to my website. I like to code and write about code and sometimes post it here for my own posterity. I have been a developer for a couple decades and I **still** enjoy it very much.
+Hello and welcome to my website. I like to code, write about code and sometimes post it here for my own posterity. I have been a developer for a couple decades and I **still** enjoy it very much.
 
 > What I like about programming is that it is a puzzle that never ends.
 
