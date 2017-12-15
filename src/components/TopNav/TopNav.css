@@ -35,7 +35,8 @@
 
     @media (--small) {
       justify-content: center;
-      
+      margin-top: 1rem;
+
       & li:last-of-type a {
         margin-right: 0;
       }
