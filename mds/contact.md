@@ -1,0 +1,5 @@
+If you would like to contact me, use one of the social links above. Send me a message on twitter. If you are just interested in what I have done recently checkout one of my github accounts. Most of the work I do is for private github repo's, but I do quite a bit of work that I post to public repos as well. I have been pretty active on codewars lately and enjoy using it to keep my development approaches refined. Sometimes I use codebin but I use my local dev environment more frequently.
+
+Do you have a project or a question about tech? Seriously, send me a message on twitter. I love getting involved in new stuff. However my time is limited but I will let you know if I can help, and I will try to help in anyway I can.
+
+> I have many hobbies. 3d Printing, MicroControllers, Arduino/RaspberryPi, SmartHome development, programming, fishing and surfing among others.
