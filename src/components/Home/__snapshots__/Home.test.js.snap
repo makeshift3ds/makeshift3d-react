@@ -19,12 +19,17 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <article>
-          <h1>
-            Home
-          </h1>
-          <p>
-            This is some stuff about me
-          </p>
+          <h1 />
+          <Markup
+            content=""
+            disableLineBreaks={false}
+            disableWhitelist={false}
+            emptyContent={null}
+            noHtml={false}
+            noHtmlExceptMatchers={false}
+            tag="div"
+            tagName="span"
+          />
         </article>,
         <aside>
           <div
@@ -35,6 +40,16 @@ ShallowWrapper {
             </p>
             <span>
                - Random Redditor
+            </span>
+          </div>
+          <div
+            className="aside-block"
+          >
+            <p>
+              I use PERL to write code that no one understands.
+            </p>
+            <span>
+               - Ken Elliott
             </span>
           </div>
         </aside>,
@@ -49,12 +64,17 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <h1>
-              Home
-            </h1>,
-            <p>
-              This is some stuff about me
-            </p>,
+            <h1 />,
+            <Markup
+              content=""
+              disableLineBreaks={false}
+              disableWhitelist={false}
+              emptyContent={null}
+              noHtml={false}
+              noHtmlExceptMatchers={false}
+              tag="div"
+              tagName="span"
+            />,
           ],
         },
         "ref": null,
@@ -64,22 +84,29 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "Home",
+              "children": undefined,
             },
             "ref": null,
-            "rendered": "Home",
+            "rendered": null,
             "type": "h1",
           },
           Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "host",
+            "nodeType": "class",
             "props": Object {
-              "children": "This is some stuff about me",
+              "content": "",
+              "disableLineBreaks": false,
+              "disableWhitelist": false,
+              "emptyContent": null,
+              "noHtml": false,
+              "noHtmlExceptMatchers": false,
+              "tag": "div",
+              "tagName": "span",
             },
             "ref": null,
-            "rendered": "This is some stuff about me",
-            "type": "p",
+            "rendered": null,
+            "type": [Function],
           },
         ],
         "type": "article",
@@ -89,81 +116,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": <div
-            className="aside-block"
-          >
-            <p>
-              This guy codes!
-            </p>
-            <span>
-               - Random Redditor
-            </span>
-          </div>,
-        },
-        "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              <p>
-                This guy codes!
-              </p>,
-              <span>
-                 - Random Redditor
-              </span>,
-            ],
-            "className": "aside-block",
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "This guy codes!",
-              },
-              "ref": null,
-              "rendered": "This guy codes!",
-              "type": "p",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": " - Random Redditor",
-              },
-              "ref": null,
-              "rendered": " - Random Redditor",
-              "type": "span",
-            },
-          ],
-          "type": "div",
-        },
-        "type": "aside",
-      },
-    ],
-    "type": "div",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": Array [
-          <article>
-            <h1>
-              Home
-            </h1>
-            <p>
-              This is some stuff about me
-            </p>
-          </article>,
-          <aside>
+          "children": Array [
             <div
               className="aside-block"
             >
@@ -173,72 +126,22 @@ ShallowWrapper {
               <span>
                  - Random Redditor
               </span>
-            </div>
-          </aside>,
-        ],
-        "className": "content-container",
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              <h1>
-                Home
-              </h1>,
-              <p>
-                This is some stuff about me
-              </p>,
-            ],
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "Home",
-              },
-              "ref": null,
-              "rendered": "Home",
-              "type": "h1",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "This is some stuff about me",
-              },
-              "ref": null,
-              "rendered": "This is some stuff about me",
-              "type": "p",
-            },
-          ],
-          "type": "article",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": <div
+            </div>,
+            <div
               className="aside-block"
             >
               <p>
-                This guy codes!
+                I use PERL to write code that no one understands.
               </p>
               <span>
-                 - Random Redditor
+                 - Ken Elliott
               </span>
             </div>,
-          },
-          "ref": null,
-          "rendered": Object {
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
             "instance": null,
             "key": undefined,
             "nodeType": "host",
@@ -280,6 +183,269 @@ ShallowWrapper {
             ],
             "type": "div",
           },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <p>
+                  I use PERL to write code that no one understands.
+                </p>,
+                <span>
+                   - Ken Elliott
+                </span>,
+              ],
+              "className": "aside-block",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "I use PERL to write code that no one understands.",
+                },
+                "ref": null,
+                "rendered": "I use PERL to write code that no one understands.",
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": " - Ken Elliott",
+                },
+                "ref": null,
+                "rendered": " - Ken Elliott",
+                "type": "span",
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "aside",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <article>
+            <h1 />
+            <Markup
+              content=""
+              disableLineBreaks={false}
+              disableWhitelist={false}
+              emptyContent={null}
+              noHtml={false}
+              noHtmlExceptMatchers={false}
+              tag="div"
+              tagName="span"
+            />
+          </article>,
+          <aside>
+            <div
+              className="aside-block"
+            >
+              <p>
+                This guy codes!
+              </p>
+              <span>
+                 - Random Redditor
+              </span>
+            </div>
+            <div
+              className="aside-block"
+            >
+              <p>
+                I use PERL to write code that no one understands.
+              </p>
+              <span>
+                 - Ken Elliott
+              </span>
+            </div>
+          </aside>,
+        ],
+        "className": "content-container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h1 />,
+              <Markup
+                content=""
+                disableLineBreaks={false}
+                disableWhitelist={false}
+                emptyContent={null}
+                noHtml={false}
+                noHtmlExceptMatchers={false}
+                tag="div"
+                tagName="span"
+              />,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "h1",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "content": "",
+                "disableLineBreaks": false,
+                "disableWhitelist": false,
+                "emptyContent": null,
+                "noHtml": false,
+                "noHtmlExceptMatchers": false,
+                "tag": "div",
+                "tagName": "span",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "article",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="aside-block"
+              >
+                <p>
+                  This guy codes!
+                </p>
+                <span>
+                   - Random Redditor
+                </span>
+              </div>,
+              <div
+                className="aside-block"
+              >
+                <p>
+                  I use PERL to write code that no one understands.
+                </p>
+                <span>
+                   - Ken Elliott
+                </span>
+              </div>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <p>
+                    This guy codes!
+                  </p>,
+                  <span>
+                     - Random Redditor
+                  </span>,
+                ],
+                "className": "aside-block",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "This guy codes!",
+                  },
+                  "ref": null,
+                  "rendered": "This guy codes!",
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": " - Random Redditor",
+                  },
+                  "ref": null,
+                  "rendered": " - Random Redditor",
+                  "type": "span",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <p>
+                    I use PERL to write code that no one understands.
+                  </p>,
+                  <span>
+                     - Ken Elliott
+                  </span>,
+                ],
+                "className": "aside-block",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "I use PERL to write code that no one understands.",
+                  },
+                  "ref": null,
+                  "rendered": "I use PERL to write code that no one understands.",
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": " - Ken Elliott",
+                  },
+                  "ref": null,
+                  "rendered": " - Ken Elliott",
+                  "type": "span",
+                },
+              ],
+              "type": "div",
+            },
+          ],
           "type": "aside",
         },
       ],
