@@ -15,6 +15,7 @@ const sourceMapConfig = require('./config/webpack/source-maps.config');
 const cleanConfig = require('./config/webpack/clean.config');
 const uglifyConfig = require('./config/webpack/uglify.config');
 const jsConfig = require('./config/webpack/js.config');
+const envConfig = require('./config/webpack/env.config');
 
 /* Paths */
 const PATHS = {
@@ -58,6 +59,7 @@ module.exports = env => {
         root: process.cwd(),
         path: PATHS.build
       }),
+      envConfig.load(env),
       uglifyConfig.load()
     );
   } else if (env === 'dev') {
@@ -65,7 +67,8 @@ module.exports = env => {
       common,
       cssConfig.load(),
       devServerConfig.load(),
-      sourceMapConfig.load({ devtool: 'source-map' }) // can use breakpoints with source-map
+      sourceMapConfig.load({ devtool: 'source-map' }), // can use breakpoints with source-map
+      envConfig.load(env)
     );
   }
   console.error('BUILD FAILED: env variable not provided to webpack config');

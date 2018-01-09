@@ -7,10 +7,12 @@ export default class Base extends React.Component {
     try {
       let page = localStorage.getItem(this.slug);
 
+      page = null;
+
       if (page) {
         page = JSON.parse(page);
       } else {
-        const res = await fetch(`http://localhost:3000/pages/${this.slug}`);
+        const res = await fetch(`${process.env.API_URL}/pages/${this.slug}`);
         page = await res.json();
         localStorage.setItem(this.slug, JSON.stringify(page));
       }
