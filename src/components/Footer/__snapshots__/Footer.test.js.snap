@@ -21,7 +21,7 @@ ShallowWrapper {
         className="copyright"
       >
         Copyright ©
-        2017
+        2018
       </div>,
     },
     "ref": null,
@@ -32,14 +32,14 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           "Copyright ©",
-          2017,
+          2018,
         ],
         "className": "copyright",
       },
       "ref": null,
       "rendered": Array [
         "Copyright ©",
-        2017,
+        2018,
       ],
       "type": "div",
     },
@@ -55,7 +55,7 @@ ShallowWrapper {
           className="copyright"
         >
           Copyright ©
-          2017
+          2018
         </div>,
       },
       "ref": null,
@@ -66,14 +66,14 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             "Copyright ©",
-            2017,
+            2018,
           ],
           "className": "copyright",
         },
         "ref": null,
         "rendered": Array [
           "Copyright ©",
-          2017,
+          2018,
         ],
         "type": "div",
       },
