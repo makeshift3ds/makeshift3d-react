@@ -19,7 +19,7 @@ Personal webpage for Ken Elliott built with React 16.
 
 `npm run test:watch`
 
-**manual deploy**
+**manual deploy** (requires ssh cert)
 
 `npm run deploy`
 
