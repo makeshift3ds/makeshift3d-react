@@ -12,11 +12,11 @@ const TopNav = () => (
             Home
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link to="/blog" aria-label="link to the blog section">
             Blog
           </Link>
-        </li>
+        </li> */}
         <li>
           <Link to="/resume" aria-label="link to Ken Elliott's resume">
             Resume
