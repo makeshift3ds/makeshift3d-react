@@ -7,7 +7,7 @@ Personal webpage for Ken Elliott built with React 16.
 
 `npm install`
 
-**start local dev server** [default: localhost:3000]
+**start local dev server** [default: localhost:8080]
 
 `npm run start`
 
